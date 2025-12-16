@@ -18,7 +18,7 @@
 <body>
 
     <!-- header -->
-   <header class="w-full  bg-[#F3EFEF] flex items-center justify-between pl-10 pr-10 " id="mainhaeder">
+   <header class="w-full h-20 z-10  bg-[#F3EFEF] flex items-center justify-between sm:justify-arround pl-2 pr-2 sm:pl-5 sm:pr-5  fixed top-0" id="mainhaeder">
 
     <div class="logo w-34">
         <img src="Global-img/Global-logo.png" alt="">
@@ -41,15 +41,18 @@
 
    </header>
 
-   <!-- hero section -->
+    <!-- hero section -->
 
-   <section id="Herosection"  class="bg-[url('/Global-img/Hero-image.jpg')] bg-cover bg-center-left bg-no-repeat w-full h-110 flex flex-col justify-start content-center">
-
-    <div id="hero-container-content" class="h-full w-100 flex flex-col justify-center items-start gap-y-4 relative left-10 ">
-    <h4 class="text-white">Welcome to Global Intercessors</h4>
-    <h1 class="text-white text-5xl" >A 24 Hour </h1>
-    <h1 class="text-white text-5xl" >Prayer Platform</h1>
-    <div class="cta-container-hero flex gap-x-5 pt-6">
+   <section id="Herosection"  class="mt-20 bg-[url('/Global-img/Hero-image.jpg')]
+    sm:bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/Global-img/Hero-image.jpg')] bg-cover bg-center-left bg-no-repeat  w-full h-110 content-center flex flex-col justify-center content-center">
+    <div id="hero-container-content" class="h-100 w-100 flex flex-col justify-center items-center sm:items-center gap-y-5
+     sm:justify-center
+     sm:items-start
+     sm:gap-y-5 sm:relative sm:left-10 ">
+    <h4 class="text-white text-center sm:text-left text-1xl  ">Welcome to Global Intercessors</h4>
+    <h1 class="text-white font-bold text-4xl " >A 24 Hour</h1>
+    <h1 class="text-white text-center font-bold text-4xl" >Prayer Platform</h1>
+    <div class="cta-container-hero flex gap-x-5 ">
         <a href="#" class="p-3 rounded-md text-sm bg-[#D89025] text-white ">Join the Platform</a>
         <a href="#" class="p-3 rounded-md text-sm bg-[transparent] text-white ">Send Prayer Request</a>
     </div>
@@ -57,97 +60,117 @@
 
    </section>
 
-   <!-- About Us -->
+   <!-- About us -->
 
-   <section id="aboutUs" class=" flex flex-col items-center justify-center w-full bg-[#ffff] h-60">
+   <section id="aboutus" class=" flex justify-center flex-col items-center pt-10 pb-10">
+    <div class="container w-full text-center">
+        <h1 class="text-[#119305] font-bold text-[30px] pt-5 pb-5 ">About <span class="text-black">Us</span></h1>
+    </div>
+    <div class="container w-full text-center">
 
-    <div class="about-headline w-full flex flex-col items-center justify-center gap-y-10 p-10">
-        <h1 class="text-5xl font-bold text-[#119305] ">About<span class=" font-bold text-5xl pl-1  text-[#000000] ">Us</span></h1>
-        <p class="font-bold">
-            We are a 24 hour online house of prayer committed to prayer, fasting and bringing forth the Kingdom of God on earth as it is in Heaven.
+        <p class="w-full p-5 sm:p-0  font-bold">
+            We are a 24 hour online house of prayer
+            committed to prayer, fasting and bringing 
+            forth the Kingdom of God on earth as it is in Heaven.
         </p>
+
     </div>
 
-
    </section>
+   
+   <!-- Video About us  -->
 
-   <!-- Video Section -->
+   <section class="relative w-full h-screen overflow-hidden">
+  <!-- YouTube iframe -->
+  <iframe
+    class="absolute top-0 left-0 w-full h-full scale-125"
+    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=VIDEO_ID"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+  ></iframe>
 
-   <section id="video-section" class="w-full h-full ">
+  <!-- Overlay (optional) -->
+  <div class="absolute inset-0 bg-black/40 -z-10"></div>
 
-    <video  controls  poster="/Global-img/Image-video-tumb.jpg" class="w-[100%] h-[100%]">
-  <source src="/videos/my-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <!-- Content -->
+  <div class="relative -z-3 flex h-full items-center justify-center text-white text-center">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold">Your Title</h1>
+      <p class="mt-4 text-lg">Your subtitle here</p>
+    </div>
+  </div>
+</section>
 
-   </section>
+<!-- Ongoing Events -->
 
-   <!-- Ongoing-Events -->
-    <section id="Ongoing-Events" class=" flex flex-col items-center justify-center w-full bg-[#ffff] h-60">
+<section id="Ongoing-Events" class="h-50 w-auto sm:h-140 display flex justify-center items-end bg-[url('/Global-img/Ongoing-Events.png')]  bg-cover bg-center   bg-center-center bg-no-repeat" >
 
-    <div class="about-headline w-full flex flex-col items-center justify-center gap-y-10 p-10">
-        <h1 class="text-5xl font-bold text-[#119305]">Ongoing<span class=" font-bold text-5xl pl-1 text-[#000000] ">Events</span></h1>
+    <a href="#" class=" sm:pb-4 sm:pt-4  sm:pl-20 sm:pr-20 pb-1 pt-1 pl-6 pr-6 text-center  bg-[#D89025] text-white 
+    relative bottom-[8px] sm:relative   sm:bottom-[30px] rounded-md text-[13px] sm:text-[28px] ">Click to Join</a>
+
+</section>
+
+<!-- AdCopy  -->
+
+  <section id="AdCopy" class=" before ::before pt-2 pb-2
+  relative
+            after:content-['']
+            after:absolute
+            after:top-0
+            after:left-0
+            after:w-[100%]
+            after:h-[15vh]
+            after:bg-[#D89025] 
+            after:-z-1
+            w-full flex justify-center items-center w-full
+            
+            
+             ">
+
+    <div class="adcopu-container w-full flex flex-col  m-5 gap-2 sm:flex sm:flex-row justify-center  ">
+        <img src="./Global-img/Anooucement_one.jpg" class="sm:w-[35%]" alt="">
+        <img src="./Global-img/Anooucement_one.jpg" class="sm:w-[35%]" alt="">
+    </div>
+
+  </section>
+
+  <!-- AdCopy text -->
+
+  <section id="AdCopy-text" class="w-full h-50 flex justify-center items-center flex-col">
+
+    <div class="AdCopy-text flex justify-center items-center flex-col gap-5
+    sm:flex sm:justify-center sm:items-center sm:flex-row sm:gap-5">
+        <h1 class="font-bold">SEND YOUR DETAILS</h1>
+        <form class=" flex justify-center items-center flex-col gap-2
+        sm:flex sm:justify-center sm:items-center sm:flex-row sm:gap-10" action="" method="get">
+        <input type="text" class="bg-gray-500 p-2 placeholder:text-white " placeholder="full name">
+        <input type="text" class="bg-gray-500 p-2 placeholder:text-white " placeholder="email:">
+        <button type="submit" class="bg-[#119305] rounded-md text-[20px] sm:text-[30px] text-white text-center pt-3 pb-3 pl-10 pr-10 ">submit</button>
+        </form>
         
     </div>
 
 
-   </section>
 
-   <!-- Join section -->
-
-   <section id="join-us" class="bg-[url('/Global-img/Ongoing-Events.png')] bg-contain bg-no-repeat bg-center-center w-full h-139 flex justify-center items-end">
-    
-    <div class="join-us-container w-full flex justify-center ">
-
-        <a href="#" class="text-white bg-[#D89025] text-center relative bottom-10 pl-30 pr-30 pb-5 pt-5 text-[20px] rounded-md">Click to Join</a>
-
-    </div>
-   </section>
-
-   <!-- Annoucement -->
-
-   <section id="Annoucement" class=" text-center w-full h-150 bg-[#fffff] flex flex-col justify-between items-center gap-x-10  relative
-            before:content-['']
-            before:absolute
-            before:top-0
-            before:left-[10%]
-            before:w-[80%]
-            before:h-[18%]
-            before:text-center
-            before:bg-[#D89025]
-            before:-z-10  " >
-
-    <div class="flex justify-center items-center flex-wrap w-full relative top-2 ">
-  <div class="w-1/3 h-120  p-2 flex justify-end">
-    <img src="./Global-img/Anooucement_one.jpg" alt="Anooucement_one" class="w-full">
-  </div>
-  <div class="w-1/3 h-120  p-2 flex justify-left">
-    <img src="./Global-img/Anooucement_two.png" alt="Anooucement_two" class="w-full">
-  </div>
-    </div>
-
-    <div class="flex justify-center h-100 items-center flex-wrap w-full ">
-        <form action="" method="get" class="flex justify-center h-30 items-center flex-wrap gap-x-10 w-full">
-            <h1>SEND YOUR DETAILS</h1>
-            <input  type="text" required name="fullname" placeholder="full name" class=" pl-4 pr-8 pt-2 pb-2 bg-[#C4C4C4]">
-            <input  type="text" required name="email" placeholder="email:"       class=" pl-4 pr-8 pt-2 pb-2 bg-[#C4C4C4]">
-            <button type="submit" class=" text-white pl-8 pr-8 pt-2 pb-2 text-center bg-[#119305] rounded-md">submit</button>
-        </form>
-    </div>
+  </section>
 
 
-   </section>
 
-   <!-- Contact information -->
 
-   <section id="Contact-information" class="w-full bg-[#119305] flex flex-row sm:flex-col flex-wrap justify-evenly items-center h-40">
 
-    <div class="container-contact w-1/4 text-white text-[20px]">
+<!-- Contact information -->
+
+   <section id="Contact-information" class="
+   sm:justify-arround sm:flex  sm:justify-center  sm:items-center sm:flex-row
+   w-full bg-[#119305] flex justify-center items-center flex-col h-60 gap-2">
+
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
         <p class="w-[290px] text-white font-bold">
             Global Intercessors Address: 58 Alpes Vainona Harare, Zimbabwe
         </p>
     </div>
-    <div class="container-contact w-1/4 text-white text-[20px]">
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
         <p  class="w-[300px] text-white font-bold">
 
             Global Intercessors 
@@ -158,6 +181,9 @@ Email: info@global-intercessors.com
     </div>
 
    </section>
+
+
+
 
    <!-- Footer follow us -->
 
@@ -180,6 +206,10 @@ Email: info@global-intercessors.com
       </div>
 
    </footer>
+
+
+
+
     
 </body>
 </html>
