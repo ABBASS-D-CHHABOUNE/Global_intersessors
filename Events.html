@@ -28,10 +28,10 @@
     </div>
     <nav class="nav-menu">
         <ul class="ul-list hidden lg:flex lg:gap-x-5">
-            <li><a href="#">Home </a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="Global.html">Home </a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
             <li><a href="#">News & Update</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="Events.html">Events</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -221,9 +221,10 @@
 
    <!-- Leave Your Details Here -->
 
-   <section id="Details" class="w-full flex justify-center items-center flex-col gap-5 pt-4 pb-4 ">
+   <section id="Details" class="w-full flex justify-center items-center flex-col gap-5 pt-4 pb-4 relative before:content-['']  ">
 
-    <div id="details-container" class="flex flex-col gap-2 p-5">
+   <div class=" border-2 border-black w-[80%]  sm:w-[95%]  p-3 " >
+     <div id="details-container" class="flex flex-col gap-2 p-5 ">
 
         <h1 class="text-center font-bold text-[#119305] text-3xl">Leave Your Details Here</h1>
         <p class="text-center font-bold text-3.5xl">So that we can get in touch with you about all our updates</p>
@@ -240,8 +241,13 @@
             <input type="submit" placeholder="Submit" value="Submit"
         class=" pb-3 pt-3 pr-10 pl-10  bg-[#119305] text-white rounded-md ">
         </div>
+   </div>
 
    </section>
+
+   <!--
+   before:w-1/2 before:h-40 before:border-2 before:border-black 
+    -->
 
 
    <!-- Contact information -->
