@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title> 
+
+    <!--
+    shadow doesn't work permantely ! 
+     -->
+    <!-- script to use tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- main font -- roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- main cdn for icons  -->
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+    <!-- header -->
+   <header class="w-full h-20 z-10  bg-[#F3EFEF] flex items-center justify-between sm:justify-arround pl-2 pr-2 sm:pl-5 sm:pr-5  fixed top-0" id="mainhaeder">
+
+    <div class="logo w-34">
+        <img src="Global-img/Global-logo.png" alt="">
+    </div>
+    <nav class="nav-menu">
+        <ul class="ul-list hidden lg:flex lg:gap-x-5">
+            <li><a href="#">Home </a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News & Update</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-buton">
+        <a href="#"  class="bg-[#451E1E] text-[#F3EFEF] p-3 rounded-full text-[11px]">Be Part of the Intercessors</a>
+    </div>
+
+
+   </header>
+
+    <!-- hero section -->
+
+   <section id="Herosection"  class="mt-20 bg-[url('/Global-img/Events-hero.jpg')]
+    sm:bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/Global-img/Events-hero.jpg')] bg-cover bg-center-left bg-no-repeat  w-full h-110 content-center flex flex-col justify-center content-center">
+    <div id="hero-container-content" class="h-100 w-100 flex flex-col justify-center items-center sm:items-center gap-y-5
+     sm:justify-center
+     sm:items-start
+     sm:gap-y-5 sm:relative sm:left-10 ">
+    <h4 class="text-white text-center sm:text-left text-1xl  ">Be part of the team</h4>
+    <h1 class="text-white font-bold text-4xl " >Join Our Programs</h1>
+    <h1 class="text-white text-center font-bold text-4xl" >& Stay Alert always</h1>
+    <div class="cta-container-hero flex gap-x-5 ">
+        <a href="#" class="p-3 rounded-md text-sm bg-[#119305] text-white ">Know More</a>
+        <a href="#" class="p-3 rounded-md text-sm bg-[transparent] text-white ">Join The Platform</a>
+    </div>
+    </div>
+
+   </section>
+
+   <!-- Events-list -->
+
+   <section id="Events-list">
+
+    <div id="Events-container" class=" p-10 sm:p-5 md:p-10 gap-5 sm:gap-5 md:gap-2 grid sm:grid-cols-1 sm:grid sm:grid-cols-[35%_15%_50%] md:grid md:grid-cols-[20%_15%_65%]  ">
+
+        <div id="events-image">
+            <img src="./Global-img/Events-image.jpg" alt="Events-image" class="w-full h-full">
+        </div>
+
+        <div id="Events-date" class="text-center flex justify-center items-center ">
+            <h1 class="font-bold text-3xl pb-2 pt-2  sm:w-34 sm:text-5xl sm:pb-0 sm:pt-0">
+                23 JAN 2022
+            </h1>
+        </div>
+
+        <div id="Events-info" class="flex justify-between flex-col p-2 sm:p-0">
+
+            <h1 class="w-full text-center font-light text-2xl sm:font-bold sm:text-3xl sm:text-left ">LiftUp Zimbabwe 2022</h1>
+            <p class="text-center sm:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc, ut sagittis sit aliquam in mauris ultricies non. 
+                Laoreet sed nunc faucibus ipsum congue. 
+                Egestas diam faucibus cursus ultricies 
+            </p>
+            <div id="Events-info-cta" class=" w-full flex justify-center sm:justify-start gap-2 flex-row  pt-4 pb-4 sm:pt-2 sm:pb-2 sm:gap-10 ">
+                <a href="#" class="bg-[#119305] text-white pl-6 pr-6 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2 ">Join the Event</a>
+                <a href="#" class="bg-transparent text-black pl-2 pr-2 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2">Join The Platform</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Events-container" class=" p-10 sm:p-5 md:p-10 gap-2 sm:gap-5 md:gap-2 grid sm:grid-cols-1 sm:grid sm:grid-cols-[35%_15%_50%] md:grid md:grid-cols-[20%_15%_65%]  ">
+
+        <div id="events-image">
+            <img src="./Global-img/Events-image.jpg" alt="Events-image" class="w-full h-full">
+        </div>
+
+        <div id="Events-date" class="text-center flex justify-center items-center ">
+            <h1 class="font-bold text-3xl pb-2 pt-2  sm:w-34 sm:text-5xl sm:pb-0 sm:pt-0">
+                23 JAN 2022
+            </h1>
+        </div>
+
+        <div id="Events-info" class="flex justify-between flex-col p-2 sm:p-0">
+
+            <h1 class="w-full text-center font-light text-2xl sm:font-bold sm:text-3xl sm:text-left font-bold">LiftUp Zimbabwe 2022</h1>
+            <p class="text-center sm:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc, ut sagittis sit aliquam in mauris ultricies non. 
+                Laoreet sed nunc faucibus ipsum congue. 
+                Egestas diam faucibus cursus ultricies 
+            </p>
+            <div id="Events-info-cta" class=" w-full flex justify-center sm:justify-start gap-2 flex-row  pt-4 pb-4 sm:pt-2 sm:pb-2 sm:gap-10 ">
+                <a href="#" class="bg-[#119305] text-white pl-6 pr-6 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2 ">Join the Event</a>
+                <a href="#" class="bg-transparent text-black pl-2 pr-2 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2">Join The Platform</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Events-container" class=" p-10 sm:p-5 md:p-10 gap-2 sm:gap-5 md:gap-2 grid sm:grid-cols-1 sm:grid sm:grid-cols-[35%_15%_50%] md:grid md:grid-cols-[20%_15%_65%]  ">
+
+        <div id="events-image">
+            <img src="./Global-img/Events-image.jpg" alt="Events-image" class="w-full h-full">
+        </div>
+
+        <div id="Events-date" class="text-center flex justify-center items-center ">
+            <h1 class="font-bold text-3xl pb-2 pt-2  sm:w-34 sm:text-5xl sm:pb-0 sm:pt-0">
+                23 JAN 2022
+            </h1>
+        </div>
+
+        <div id="Events-info" class="flex justify-between flex-col p-2 sm:p-0">
+
+            <h1 class="w-full text-center font-light text-2xl sm:font-bold sm:text-3xl sm:text-left ">LiftUp Zimbabwe 2022</h1>
+            <p class="text-center sm:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc, ut sagittis sit aliquam in mauris ultricies non. 
+                Laoreet sed nunc faucibus ipsum congue. 
+                Egestas diam faucibus cursus ultricies 
+            </p>
+            <div id="Events-info-cta" class=" w-full flex justify-center sm:justify-start gap-2 flex-row  pt-4 pb-4 sm:pt-2 sm:pb-2 sm:gap-10 ">
+                <a href="#" class="bg-[#119305] text-white pl-6 pr-6 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2 ">Join the Event</a>
+                <a href="#" class="bg-transparent text-black pl-2 pr-2 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2">Join The Platform</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Events-container" class=" p-10 sm:p-5 md:p-10 gap-2 sm:gap-5 md:gap-2 grid sm:grid-cols-1 sm:grid sm:grid-cols-[35%_15%_50%] md:grid md:grid-cols-[20%_15%_65%]  ">
+
+        <div id="events-image">
+            <img src="./Global-img/Events-image.jpg" alt="Events-image" class="w-full h-full">
+        </div>
+
+        <div id="Events-date" class="text-center flex justify-center items-center ">
+            <h1 class="font-bold text-3xl pb-2 pt-2  sm:w-34 sm:text-5xl sm:pb-0 sm:pt-0">
+                23 JAN 2022
+            </h1>
+        </div>
+
+        <div id="Events-info" class="flex justify-between flex-col p-2 sm:p-0">
+
+            <h1 class="w-full text-center font-light text-2xl sm:font-bold sm:text-3xl sm:text-left ">LiftUp Zimbabwe 2022</h1>
+            <p class="text-center sm:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc, ut sagittis sit aliquam in mauris ultricies non. 
+                Laoreet sed nunc faucibus ipsum congue. 
+                Egestas diam faucibus cursus ultricies 
+            </p>
+            <div id="Events-info-cta" class=" w-full flex justify-center sm:justify-start gap-2 flex-row  pt-4 pb-4 sm:pt-2 sm:pb-2 sm:gap-10 ">
+                <a href="#" class="bg-[#119305] text-white pl-6 pr-6 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2 ">Join the Event</a>
+                <a href="#" class="bg-transparent text-black pl-2 pr-2 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2">Join The Platform</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Events-container" class=" p-10 sm:p-5 md:p-10 gap-2 sm:gap-5 md:gap-2 grid sm:grid-cols-1 sm:grid sm:grid-cols-[35%_15%_50%] md:grid md:grid-cols-[20%_15%_65%]  ">
+
+        <div id="events-image">
+            <img src="./Global-img/Events-image.jpg" alt="Events-image" class="w-full h-full">
+        </div>
+
+        <div id="Events-date" class="text-center flex justify-center items-center ">
+            <h1 class="font-bold text-3xl pb-2 pt-2  sm:w-34 sm:text-5xl sm:pb-0 sm:pt-0">
+                23 JAN 2022
+            </h1>
+        </div>
+
+        <div id="Events-info" class="flex justify-between flex-col p-2 sm:p-0">
+
+            <h1 class="w-full text-center font-light text-2xl sm:font-bold sm:text-3xl sm:text-left ">LiftUp Zimbabwe 2022</h1>
+            <p class="text-center sm:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc, ut sagittis sit aliquam in mauris ultricies non. 
+                Laoreet sed nunc faucibus ipsum congue. 
+                Egestas diam faucibus cursus ultricies 
+            </p>
+            <div id="Events-info-cta" class=" w-full flex justify-center sm:justify-start gap-2 flex-row  pt-4 pb-4 sm:pt-2 sm:pb-2 sm:gap-10 ">
+                <a href="#" class="bg-[#119305] text-white pl-6 pr-6 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2 ">Join the Event</a>
+                <a href="#" class="bg-transparent text-black pl-2 pr-2 pt-2 pb-2 rounded-md sm:pl-10 sm:pr-10 sm:pt-2 sm:pb-2">Join The Platform</a>
+            </div>
+
+        </div>
+
+    </div>
+
+   </section>
+
+   <!-- Leave Your Details Here -->
+
+   <section id="Details" class="w-full flex justify-center items-center flex-col gap-5 pt-4 pb-4 ">
+
+    <div id="details-container" class="flex flex-col gap-2 p-5">
+
+        <h1 class="text-center font-bold text-[#119305] text-3xl">Leave Your Details Here</h1>
+        <p class="text-center font-bold text-3.5xl">So that we can get in touch with you about all our updates</p>
+
+    </div>
+
+    <form action="" method="get" class=" p-5  grid grid-cols-1 grid-row-2 justify-center  sm:grid sm:grid-cols-3 sm:grid-row-2  gap-4 w-full">
+        <input required type="text" placeholder="Full Name" name="Full-Name" class="bg-[#C4C4C4] placeholder:text-white rounded-md text-white border-0 pb-3 pt-3 pr-5 pl-5">
+        <input required type="tel" placeholder="phone" name="phone"          class="bg-[#C4C4C4] placeholder:text-white rounded-md text-white border-0 pb-3 pt-3 pr-5 pl-5">
+        <input required type="email" placeholder="Email" name="Email"        class="bg-[#C4C4C4] placeholder:text-white rounded-md text-white border-0 pb-3 pt-3 pr-5 pl-5">
+        
+    </form>
+    <div class="w-full flex-row justify-center items-center text-center ">
+            <input type="submit" placeholder="Submit" value="Submit"
+        class=" pb-3 pt-3 pr-10 pl-10  bg-[#119305] text-white rounded-md ">
+        </div>
+
+   </section>
+
+
+   <!-- Contact information -->
+
+   <section id="Contact-information" class="
+   sm:justify-arround sm:flex  sm:justify-center  sm:items-center sm:flex-row
+   w-full bg-[#119305] flex justify-center items-center flex-col h-60 gap-2">
+
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
+        <p class="w-[290px] text-white font-bold">
+            Global Intercessors Address: 58 Alpes Vainona Harare, Zimbabwe
+        </p>
+    </div>
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
+        <p  class="w-[300px] text-white font-bold">
+
+            Global Intercessors 
+Phone:+263 77 22 2087
+Email: info@global-intercessors.com
+            
+        </p>
+    </div>
+
+   </section>
+
+
+
+
+   <!-- Footer follow us -->
+
+   <footer id="Follow-us" class="bg-[#000000]">
+
+      <div id="Follow-us-container" class=" w-full h-25 flex flex-col justify-center items-center content-center flex-col" >
+
+        <h1 class="text-white text-[10px] font-bold">Follow Us On:</h1>
+
+        <div class="social flex flex-row gap-x-2">
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-facebook-f"></i></a>
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-twitter"></i></a>
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-instagram"></i></a>
+        </div>
+
+        <h4 class="text-white font-bold">&copy;Global Intercessors</h4>
+
+        
+
+      </div>
+
+   </footer>
+    
+</body>
+</html>
