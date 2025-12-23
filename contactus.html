@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <!-- main file css -->
+     <link rel="stylesheet" href="global.css">
+    <!-- script to use tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- main font -- roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- main cdn for icons  -->
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+
+     <!-- header -->
+   <header class="w-full h-20 z-10  bg-[#F3EFEF] flex items-center justify-between sm:justify-arround pl-2 pr-2 sm:pl-5 sm:pr-5  fixed top-0" id="mainhaeder">
+
+    <div class="logo w-34">
+        <img src="Global-img/Global-logo.png" alt="">
+    </div>
+    <nav class="nav-menu">
+        <ul class="ul-list hidden lg:flex lg:gap-x-5">
+            <li><a href="Global.html">Home </a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="News-Updates.html">News & Update</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-buton">
+        <a href="#"  class="bg-[#451E1E] text-[#F3EFEF] p-3 rounded-full text-[11px]">Be Part of the Intercessors</a>
+    </div>
+
+
+   </header>
+   <!-- hero section -->
+
+   <section id="Herosection"  class="mt-20 bg-[url('/Global-img/Events-hero.jpg')]
+    sm:bg-[linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/Global-img/Events-hero.jpg')] bg-cover bg-center-left bg-no-repeat  w-full h-110 content-center flex flex-col justify-center content-center">
+    <div id="hero-container-content" class="h-100 w-100 flex flex-col justify-center items-center sm:items-center gap-y-5
+     sm:justify-center
+     sm:items-start
+     sm:gap-y-5 sm:relative sm:left-10 ">
+    <h4 class="text-white text-center sm:text-left text-1xl  ">It’s time for you,</h4>
+    <h1 class="text-white font-bold text-4xl " >To Stay Alert </h1>
+    <h1 class="text-white text-center font-bold text-4xl" >for Recent Updates</h1>
+    <div class="cta-container-hero flex gap-x-5 ">
+        <a href="#" class="p-3 rounded-md text-sm bg-[#119305] text-white ">Know More</a>
+        <a href="#" class="p-3 rounded-md text-sm bg-[transparent] text-white ">Join The Platform</a>
+    </div>
+    </div>
+
+   </section>
+
+   <!-- Form Validatio To Send It  -->
+
+
+   <section id="contact-us" class="w-full  flex justify-center items-center gap-2 flex-col  p-5">
+    
+    <!-- Start HeadLine -->
+    <div id="contact-headline" class=" w-full h-full  flex justify-center items-center flex-col gap-2 pt-5 pb-5">
+
+        <h1 class="w-full text-center text-[#119305] font-bold text-3xl 
+        sm:w-full sm:text-center sm:text-[#119305] sm:font-bold sm:text-4xl ">Do You Need More Information?</h1>
+        <p class="w-full text-center font-bold">Please Contact Us</p>
+
+    </div>
+
+    <!-- Start Form -->
+
+    <div id="form-container" class=" w-full h-full sm:w-180  flex justify-center items-center flex-col gap-2 pt-5 pb-5">
+        <form action="" method="get"  class="grid grid-cols-1 w-[100%] p-4">
+
+            <div class=" h-full  flex flex-col md:flex-row gap-2 w-[100%] p-3">
+
+                <input type="text" placeholder="Full Name" class="bg-[#C4C4C4] w-[100%] p-3 rounded-md placeholder:text-white  " >
+                <input type="tel" placeholder="Phone" class="bg-[#C4C4C4] w-[100%] p-3      rounded-md placeholder:text-white " >
+                <input type="email" placeholder="Email" class="bg-[#C4C4C4] w-[100%] p-3    rounded-md placeholder:text-white " >
+
+            </div>
+
+             <div class=" h-full w-[100%]  flex flex-row justify-between items-center w-full rounded-md p-3">
+
+                <div class="w-full text-left bg-white ">
+                    <label for="Genre">Genre</label>
+                    
+                </div>
+               <div class="w-full text-right bg-white ">
+                 <label for="Male" >Male</label>
+                <input type="radio" name="Male" id="Male" class="p-1">
+                <label for="Female" >Female</label>
+                <input type="radio" name="Female" id="Female" class="p-1"> 
+               </div>
+
+
+            </div>
+
+            <div class=" h-full  flex flex-row gap-2 w-[100%] p-3">
+
+                <input type="text" placeholder="City" class="bg-[#C4C4C4] w-[100%] p-3    rounded-md placeholder:text-white  " >
+                <input type="text" placeholder="Country" class="bg-[#C4C4C4] w-[100%] p-3 rounded-md placeholder:text-white  " >
+
+            </div>
+
+
+            <div class=" h-full w-full flex flex-col md:flex-row  gap-2 w-[100%] p-3">
+
+               <div class="w-full">
+                 <input type="text" placeholder="Born Again:" class="bg-[#C4C4C4] w-[100%] p-3 rounded-md placeholder:text-white " >
+
+               </div>
+
+               <div class="w-full text-center pt-5 pb-5 flex justify-center items-center gap-x-2">
+
+
+                <label for="Yes" class="font-bold">Yes</label>
+                <input type="checkbox" class="bg-blue-300" name="yes" id="yes">
+                <label for="No" class="font-bold">No</label>
+                <input type="checkbox" name="No"  id="No">
+
+                
+                
+               </div>
+                
+
+            </div>
+
+            <div
+             class="submit w-full flex justify-center items-center">
+
+             <button type="submit" class="pl-10 pr-10 pt-3 pb-3 bg-[#119305] font-bold text-white rounded-md hover:bg-black">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+
+   </section>
+
+  
+
+
+
+
+
+
+   <!-- Contact information -->
+
+   <section id="Contact-information" class="
+   sm:justify-arround sm:flex  sm:justify-center  sm:items-center sm:flex-row
+   w-full bg-[#119305] flex justify-center items-center flex-col h-60 gap-2">
+
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
+        <p class="w-[290px] text-white font-bold">
+            Global Intercessors Address: 58 Alpes Vainona Harare, Zimbabwe
+        </p>
+    </div>
+    <div class="container-contact w-auto text-white text-[15px] sm:text-[20px]">
+        <p  class="w-[300px] text-white font-bold">
+
+            Global Intercessors 
+Phone:+263 77 22 2087
+Email: info@global-intercessors.com
+            
+        </p>
+    </div>
+
+   </section>
+
+
+
+
+   <!-- Footer follow us -->
+
+   <footer id="Follow-us" class="bg-[#000000]">
+
+      <div id="Follow-us-container" class=" w-full h-25 flex flex-col justify-center items-center content-center flex-col" >
+
+        <h1 class="text-white text-[10px] font-bold">Follow Us On:</h1>
+
+        <div class="social flex flex-row gap-x-2">
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-facebook-f"></i></a>
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-twitter"></i></a>
+            <a href="#" class="text-[#D89025] text-[20px]" ><i class="fab solid fa-instagram"></i></a>
+        </div>
+
+        <h4 class="text-white font-bold">&copy;Global Intercessors</h4>
+
+        
+
+      </div>
+
+   </footer>
+
+   
+
+
+    
+</body>
+</html>
